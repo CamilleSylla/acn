@@ -1,0 +1,79 @@
+.wrapper {
+    width: 100%;
+    height: auto;
+    .container {
+        margin: 0 auto;
+        width: 90%;
+        background: rgba(blue, .05);
+        border-radius: 100px;
+        padding: 5vh 0 5vh 0;
+        position: relative;
+        h1 {
+            text-align: center;
+            font-size: var(--medium-title);
+            font-weight: 500;
+            width: 60%;
+            margin: 0 auto;
+            padding: 5vh 0 0 0;
+        }
+        .bubble {
+            position: fixed;
+            top: 35vh;
+            right: 10%;
+            width: 40%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .circle {
+                width: 40vh;
+                height: 40vh;
+                border-radius: 50%;
+                border: 5px solid rgba(blue, .5);
+                display: flex;
+            justify-content: center;
+            align-items: center;
+                img {
+                    height: 50%;
+                }
+            }
+        }
+        .steps_container {
+            padding: 5vh 0 5vh 0;
+            height: auto;
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+            
+            .step {
+                display: flex;
+                justify-content: space-between;
+                width: 60%;
+                margin: 0 auto;
+                padding: 15vh 0 15vh 0;
+                span {
+                    display: block;
+                    width: 3vw;
+                    height: 3vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    background: blue;
+                    font-weight: 700;
+                    font-size: 1vw;
+                    color: white;
+                    -webkit-box-shadow: 5px 23px 38px -18px rgba(grey,0.75); 
+                    box-shadow: 5px 23px 38px -18px rgba(grey,0.75);
+                }
+                h1 {
+                    margin: 0;
+                    text-align: left;
+                    padding: 5vh 0 2vh 0;
+                    font-size: var(--small-title);
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

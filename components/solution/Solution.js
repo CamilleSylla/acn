@@ -2,6 +2,8 @@ import Section from "../templates/Section/Section";
 import style from "./solution.module.scss";
 
 export default function Solution() {
+
+  
   const Illustration = () => {
     return (
       <div className={style.illustration}>

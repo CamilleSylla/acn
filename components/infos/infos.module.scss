@@ -1,0 +1,30 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .map {
+        width: 60vh;
+        height: 60vh;
+        border-radius: 50%;
+        border: 4px solid rgba(blue, .3);
+        -webkit-box-shadow: 5px 23px 38px -18px rgba(6,0,255,0.47); 
+            box-shadow: 5px 23px 38px -18px rgba(6,0,255,0.47);
+        overflow: hidden;
+    }
+    .content {
+        width: 40%;
+        h1 {
+            padding: 0 0 5vh 0;
+        }
+        ul {
+            list-style: none;
+            li {
+                height: 10vh;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}

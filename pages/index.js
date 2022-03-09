@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import AccordionComponent from '../components/accordion/Accordion'
 import Banner from '../components/banner/Banner'
+import Infos from '../components/infos/Infos'
 import Solution from '../components/solution/Solution'
 import Steps from '../components/steps/Steps'
-import Section from '../components/templates/Section/Section'
 
 export default function Home() {
   return (
@@ -18,7 +19,8 @@ export default function Home() {
         <Banner/>
         <Solution/>
         <Steps/>
-        <Section/>
+        <AccordionComponent/>
+        <Infos/>
       </main>
 
     </div>

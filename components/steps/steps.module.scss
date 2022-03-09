@@ -16,39 +16,39 @@
             margin: 0 auto;
             padding: 5vh 0 0 0;
         }
-        .bubble {
-            position: fixed;
-            top: 35vh;
-            right: 10%;
-            width: 40%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .circle {
-                width: 40vh;
-                height: 40vh;
-                border-radius: 50%;
-                border: 5px solid rgba(blue, .5);
-                display: flex;
-            justify-content: center;
-            align-items: center;
-                img {
-                    height: 50%;
-                }
-            }
-        }
+        
         .steps_container {
             padding: 5vh 0 5vh 0;
             height: auto;
             width: 80%;
             margin: 0 auto;
             position: relative;
-            
-            .step {
+            .content_wrapper {
                 display: flex;
                 justify-content: space-between;
-                width: 60%;
+            }
+            .bubble {
+                width: 40%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .circle {
+                    width: 30vh;
+                    height: 30vh;
+                    border-radius: 50%;
+                    border: 5px solid rgba(blue, .5);
+                    display: flex;
+                justify-content: center;
+                align-items: center;
+                    img {
+                        filter: invert(9%) sepia(100%) saturate(7445%) hue-rotate(249deg) brightness(86%) contrast(143%);
+                        height: 50%;
+                    }
+                }
+            }
+            .step {
+                width: 50%;
                 margin: 0 auto;
                 padding: 15vh 0 15vh 0;
                 span {
@@ -59,7 +59,7 @@
                     justify-content: center;
                     align-items: center;
                     border-radius: 50%;
-                    background: blue;
+                    background: #0000ff;
                     font-weight: 700;
                     font-size: 1vw;
                     color: white;

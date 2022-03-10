@@ -10,8 +10,8 @@
         position: relative;
         img {
             position: absolute;
-            -webkit-box-shadow: 5px 23px 38px -18px rgba(6,0,255,0.47); 
-            box-shadow: 5px 23px 38px -18px rgba(6,0,255,0.47);
+            -webkit-box-shadow: 5px 23px 38px -18px rgba(22, 157, 173, 0.45); 
+            box-shadow: 5px 23px 38px -18px rgba(22, 157, 173, 0.45);
             &:first-of-type {
                 top: 50%;
                 left: 50%;
@@ -31,7 +31,7 @@
             width: 80%;
             span {
                 font-weight: 800;
-                color: blue;
+                color: var(--primary-color);
                 font-size: .8rem;
             }
             h1 {

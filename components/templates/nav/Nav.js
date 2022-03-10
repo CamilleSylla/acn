@@ -1,0 +1,76 @@
+import { useEffect, useRef, useState } from 'react'
+import style from './nav.module.scss'
+const navItems = [
+    {
+        label : "Solution",
+        link : "solution"
+    },
+    {
+        label : "Nos forces",
+        link : "solution"
+    },
+    {
+        label : "Nos activités",
+        link : "solution"
+    },
+    {
+        label : "Informations",
+        link : "solution"
+    },
+    {
+        label : "Contact",
+        link : "solution"
+    },
+]
+export default function Nav () {
+
+    const [menu, setMenu] = useState(false)
+    const menuRef = useRef()
+    const navRef = useRef()
+
+    useEffect(() => {
+            if (window.matchMedia("(min-width: 991.98px)").matches) {
+            gsap.registerPlugin(ScrollTrigger)
+            gsap.from(navRef.current, {
+                background : "transparent",
+                color : "#F2F2F2",
+                borderBottom: "4px solid transparent",
+                scrollTrigger : {
+                    trigger : nav.services.current,
+                    start : "bottom bottom",
+                    end : "bottom+=10% bottom",
+                    scrub : 1
+                }
+            })
+        
+        }
+
+        if (window.matchMedia("(max-width: 991.98px)").matches) {
+            if (menu === true) {
+                menuRef.current.style.opacity = 1
+            } else {
+                menuRef.current.style.opacity = 0
+            }
+        }
+    }, [menu])
+
+    return( 
+        <nav ref={navRef} className={style.nav}>
+            <div className={style.container}>
+                <img className={style.logo} src="/assets/logo/ACN.svg"/>
+                <div onClick={() => setMenu(!menu)} className={style.hamburger}>
+                   {menu === false ? <img className={style.ham_img} src="/assets/icons/hamburger.svg"/> : <img className={style.cross_img} src="/assets/icons/cross.svg"/>} 
+                </div>
+                <ul ref={menuRef}>
+                    {navItems.map((el, i) => {
+                        return (
+                            <li key={el.label + i}>
+                                {el.label}
+                            </li>
+                        )
+                    })}
+                </ul>
+            </div>
+        </nav>
+    )
+}

@@ -9,12 +9,12 @@
         .accordion_title {
             width: 100%;
             height: 10vh;
-            border-bottom: 2px solid rgba(blue, .25);
+            border-bottom: 2px solid rgba(22, 157, 173, 0.25);
             display: flex;
             justify-content: space-between;
             align-items: center;
             img {
-                filter: invert(9%) sepia(100%) saturate(7445%) hue-rotate(249deg) brightness(86%) contrast(143%);
+                filter: invert(63%) sepia(62%) saturate(5049%) hue-rotate(151deg) brightness(89%) contrast(83%);
                 height: 50%;
                 opacity: .5;
             }
@@ -26,7 +26,7 @@
             width: 80%;
             span {
                 font-weight: 800;
-                color: blue;
+                color: var(--primary-color);
                 font-size: .8rem;
             }
             h1 {

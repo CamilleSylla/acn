@@ -76,7 +76,7 @@ export default function Steps() {
       span.forEach((span, i) => {
         tl.to(span, {
           // autoAlpha: 0,
-          color: "blue",
+          color: "var(--primary-color)",
           background: "white",
         });
       });

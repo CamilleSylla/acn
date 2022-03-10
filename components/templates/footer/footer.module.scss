@@ -2,7 +2,7 @@
     width: 100%;
     height: auto;
     .container {
-        border-top: 4px solid rgb(168, 168, 243);
+        border-top: 4px solid rgba(22, 157, 173, 0.1);
         width: 80%;
         height: auto;
         margin: 0 auto;
@@ -18,7 +18,7 @@
                 justify-content: space-between;
                 img {
                     width: 10%;
-                    filter: invert(9%) sepia(100%) saturate(7445%) hue-rotate(249deg) brightness(86%) contrast(143%);
+                    filter: invert(63%) sepia(62%) saturate(5049%) hue-rotate(151deg) brightness(89%) contrast(83%);
                     opacity: .5;
                     transition: all ease .5s;
                     cursor: pointer;

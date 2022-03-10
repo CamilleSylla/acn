@@ -4,7 +4,7 @@
     .container {
         margin: 0 auto;
         width: 90%;
-        background: rgba(blue, .05);
+        background: rgba(22, 157, 173, 0.1);
         border-radius: 100px;
         padding: 5vh 0 5vh 0;
         position: relative;
@@ -37,14 +37,14 @@
                     width: 30vh;
                     height: 30vh;
                     border-radius: 50%;
-                    border: 5px solid rgba(blue, .5);
+                    border: 5px solid var(--primary-color);
                     display: flex;
                 justify-content: center;
                 align-items: center;
+                opacity: .75;
                     img {
-                        filter: invert(9%) sepia(100%) saturate(7445%) hue-rotate(249deg) brightness(86%) contrast(143%);
+                        filter: invert(63%) sepia(62%) saturate(5049%) hue-rotate(151deg) brightness(89%) contrast(83%);
                         height: 50%;
-                        opacity: .5;
                     }
                 }
             }
@@ -60,7 +60,7 @@
                     justify-content: center;
                     align-items: center;
                     border-radius: 50%;
-                    background: #0000ff;
+                    background: var(--primary-color);
                     font-weight: 700;
                     font-size: 1vw;
                     color: white;

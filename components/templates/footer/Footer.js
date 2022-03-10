@@ -34,7 +34,7 @@ export default function Footer () {
                 <FlexDiv>
                     <div className={style.icons}>
                         {social.map((el, i) => {
-                            return <img src={el.icon}/>
+                            return <img key={el.label} src={el.icon}/>
                         })}
                     </div>
                 </FlexDiv>

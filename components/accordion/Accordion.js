@@ -54,7 +54,7 @@ export default function AccordionComponent() {
         <Accordion>
           {accordionData.map((el, i) => {
             return (
-              <AccordionItem>
+              <AccordionItem key={el.title}>
                 <AccordionItemHeading>
                   <AccordionItemButton>
                     <div className={style.accordion_title}>

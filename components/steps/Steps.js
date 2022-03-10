@@ -41,7 +41,7 @@ export default function Steps() {
       <div ref={stepAnim} className={style.steps_container}>
         {stepsdata.map((el, i) => {
           return (
-            <div className={style.content_wrapper}>
+            <div key={el.title} className={style.content_wrapper}>
               <article key={i} className={style.step}>
                 <span data-index={i}>{i + 1}</span>
                 <h1>{el.title}</h1>

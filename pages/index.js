@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import AccordionComponent from '../components/accordion/Accordion'
 import Banner from '../components/banner/Banner'
+import Contact from '../components/contact/Contact'
 import Infos from '../components/infos/Infos'
 import Solution from '../components/solution/Solution'
 import Steps from '../components/steps/Steps'
@@ -21,6 +22,7 @@ export default function Home() {
         <Steps/>
         <AccordionComponent/>
         <Infos/>
+        <Contact/>
       </main>
 
     </div>

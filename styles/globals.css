@@ -22,6 +22,26 @@ h1 {
   text-transform: uppercase;
 }
 
+input {
+  font-family: 'Raleway', sans-serif;
+  display: block;
+  height: 8vh;
+  margin: 4vh 0 4vh 0;
+  width: 100%;
+  padding-left: 2vw;
+  border: none;
+  border-bottom: 2px solid rgb(131, 131, 250);
+}
+
+textarea {
+  font-family: 'Raleway', sans-serif;
+  padding-left: 2vw;
+  border: none;
+  border-bottom: 2px solid rgb(131, 131, 250);
+  width: 100%;
+  height: 15vh;
+}
+
 p {
   font-size: .75rem;
   line-height: 1.5rem;
@@ -38,6 +58,7 @@ font-family: 'Raleway', sans-serif;
   background: blue;
   font-weight: 700;
   color: var(--secondary-color);
+  cursor: pointer;
 }
 
 a {
@@ -47,4 +68,18 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+@media (max-width: 991.98px) {
+  html,body {
+    font-size: 2vh;
+  }
+  button {
+    padding: 2vh 6vw 2vh 6vw ;
+
+  }
+  input {
+    height: 5vh;
+  }
 }

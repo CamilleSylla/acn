@@ -45,3 +45,16 @@
         }
     }
 }
+
+@media (max-width: 991.98px) {
+    .wrapper {
+        flex-direction: column;
+    .content {
+        width: 100%;
+        .container {
+            width: 100%;
+        }
+    }
+    }
+    
+  }

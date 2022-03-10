@@ -28,3 +28,22 @@
         }
     }
 }
+
+@media (max-width: 991.98px) {
+    .wrapper {
+        flex-direction: column;
+        justify-content: space-evenly;
+        .map {
+            width: 70vw;
+            height: 70vw;
+        }
+        .content {
+            width: 100%;
+            ul {
+                li {
+                    height: 5vh;
+                }
+            }
+        }
+    }
+  }

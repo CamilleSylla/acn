@@ -69,8 +69,8 @@ export default function Infos() {
   return (
     <Section>
       <div className={style.wrapper}>
-        <Map />
         <Content />
+        <Map />
       </div>
     </Section>
   );

@@ -41,3 +41,22 @@
         }
     }
 }
+
+@media (max-width: 991.98px) {
+    .banner {
+        .illustration {
+            width: 100%;
+            border-bottom-left-radius: 75px;
+            border-bottom-right-radius: 75px;
+            .content {
+                text-align: center;
+                width: 80%;
+                left: 50%;
+                transform: translate3d(-50%,-50%,0);
+            }
+            img {
+                display: none;
+            }
+        }
+    }
+}

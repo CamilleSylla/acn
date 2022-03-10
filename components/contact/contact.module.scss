@@ -1,24 +1,11 @@
 .wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 100%;
-    .accordion {
-        width: 50%;
-        .accordion_title {
-            width: 100%;
-            height: 10vh;
-            border-bottom: 2px solid rgba(blue, .25);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            img {
-                filter: invert(9%) sepia(100%) saturate(7445%) hue-rotate(249deg) brightness(86%) contrast(143%);
-                height: 50%;
-                opacity: .5;
-            }
-        }
+    .form {
+        width: 40%;
     }
     .content {
         width: 45%;
@@ -40,19 +27,16 @@
         }
     }
 }
+
 @media (max-width: 991.98px) {
     .wrapper {
         flex-direction: column;
+        justify-content: space-evenly;
         .content {
             width: 100%;
-            .container {
-                width: 100%;
-            }
         }
-        .accordion {
+        .form {
             width: 100%;
         }
-
     }
-    
   }

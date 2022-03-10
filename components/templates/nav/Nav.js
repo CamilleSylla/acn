@@ -1,3 +1,5 @@
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import { useEffect, useRef, useState } from 'react'
 import style from './nav.module.scss'
 const navItems = [
@@ -29,17 +31,20 @@ export default function Nav () {
     const navRef = useRef()
 
     useEffect(() => {
+        const body = document.getElementById('app')
+        console.log(body);
             if (window.matchMedia("(min-width: 991.98px)").matches) {
             gsap.registerPlugin(ScrollTrigger)
-            gsap.from(navRef.current, {
-                background : "transparent",
-                color : "#F2F2F2",
-                borderBottom: "4px solid transparent",
+            gsap.to(navRef.current, {
+                background : "#F2F2F2",
+                color : "var(--primary-color)",
+                borderBottom: "4px solid var(--primary-color)",
                 scrollTrigger : {
-                    trigger : nav.services.current,
-                    start : "bottom bottom",
-                    end : "bottom+=10% bottom",
-                    scrub : 1
+                    trigger : '#app',
+                    start : "top+=200 top",
+                    end : "top+=300 top",
+                    scrub : 1,
+                    markers: true
                 }
             })
         

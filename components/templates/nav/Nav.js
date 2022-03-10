@@ -44,7 +44,6 @@ export default function Nav () {
                     start : "top+=200 top",
                     end : "top+=300 top",
                     scrub : 1,
-                    markers: true
                 }
             })
         
